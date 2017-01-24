@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Animated Background Headers | Demo 1</title>
+		<meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+	</head>
+	<body>
+		<nav style="border-radius: 0;" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">NetSci'17</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#services-link">About Us</a></li>
+        <!-- <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Volunteers</a></li>
+        <li><a href="#">Reach Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+  
+		<div  style="    width: 100%;" class="container demo-1">
+			<div class="content">
+				<div id="large-header" style="background-image: url(images/demo-1-bg.jpg); background-color:black;" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<h1 class="main-title">NetSci'17<br><span style="font-size:x-large" class="thin">Network Science Summer School</span><br><span style="font-size:x-large" class="thin">@</span><br><span style='font-size:large;'>Indian Institute of Technology</span> <br><span class="thin" style='font-size:large;'>Ropar, Punjab</span></h1>
+				</div>
+
+				<!-- <div class="codrops-top clearfix">
+				
+
+				</div> -->
+
+				<section style="margin-top:50px;" id="services-link" class="page-section pt-160-b-120-cont">
+					<div class="container">
+            <div class="row">
+            
+              <div class="col-md-12">
+                <div class="" style="visibility: visible;">
+								  <h2 class="section-title2 font-light text-center p-0">About Event</h2>
+								</div>
+							</div>  
+              				<div style="padding-left:10%;padding-right:10%; text-align:left;">
+							<p  >Networks permeate most disciplines of sciences, engineering, economics etc. The workshop aims to bring together, people working in diverse disciplines and provides a common platform to discuss various problems and ideas underlying the theory and applications of networks.
+							</p><br>
+							<h4>Topics to be covered:</h4>
+							<ul>
+								<li>Network Science</li>
+								<li>Hands On Experience</li>
+								<li>Open Discussions and Research Ideas</li></ul>
+							
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+				
+
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
+		<script type="text/javascript">
+		$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- For the demo ad only -->   
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+
+	</body>
+</html>
